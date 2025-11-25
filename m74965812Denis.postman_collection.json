@@ -69,7 +69,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"contentType\": \"Task\",\r\n    \"name\": \"Подготовить отчет\",\r\n    \"deadline\": null,\r\n    \"parent\": null,\r\n    \"isUrgent\": false,\r\n    \"isTemplate\": false,\r\n    \"owner\": {\r\n        \"id\": \"1000004\",\r\n        \"contentType\": \"Employee\"\r\n    },\r\n    \"responsible\": {\r\n        \"id\": \"1000005\",\r\n        \"contentType\": \"Employee\"\r\n    },\r\n    \"contractor\": null,\r\n    \"attaches\": [],\r\n    \"Category130CustomFieldPrioritet\": \"П3 Низкий\"\r\n}",
+					"raw": "{\r\n    \"contentType\": \"Task\",\r\n    \"name\": \"Купить бананы\",\r\n    \"deadline\": null,\r\n    \"parent\": null,\r\n    \"isUrgent\": false,\r\n    \"isTemplate\": false,\r\n    \"owner\": {\r\n        \"id\": \"1000004\",\r\n        \"contentType\": \"Employee\"\r\n    },\r\n    \"responsible\": {\r\n        \"id\": \"1000005\",\r\n        \"contentType\": \"Employee\"\r\n    },\r\n    \"contractor\": null,\r\n    \"attaches\": [],\r\n    \"Category130CustomFieldPrioritet\": \"П3 Низкий\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -95,11 +95,8 @@
 		},
 		{
 			"name": "DescriptionTask",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
@@ -109,7 +106,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"1000023\",\r\n    \"contentType\": \"Task\",\r\n    \"attaches\": [],\r\n    \"statement\": \"<p>полный отчет за полугодие</p>\"\r\n}",
+					"raw": "{\r\n    \"id\": \"1000051\",\r\n    \"contentType\": \"Task\",\r\n    \"attaches\": [],\r\n    \"statement\": \"<p>на рынке</p>\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -117,7 +114,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000023",
+					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000051",
 					"protocol": "https",
 					"host": [
 						"m74965812",
@@ -128,7 +125,7 @@
 						"api",
 						"v3",
 						"task",
-						"1000023"
+						"1000051"
 					]
 				}
 			},
@@ -203,7 +200,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000023/doAction",
+					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000051/doAction",
 					"protocol": "https",
 					"host": [
 						"m74965812",
@@ -214,7 +211,7 @@
 						"api",
 						"v3",
 						"task",
-						"1000023",
+						"1000051",
 						"doAction"
 					]
 				}
@@ -241,7 +238,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000023/doAction",
+					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000051/doAction",
 					"protocol": "https",
 					"host": [
 						"m74965812",
@@ -252,7 +249,7 @@
 						"api",
 						"v3",
 						"task",
-						"1000023",
+						"1000051",
 						"doAction"
 					]
 				}
@@ -271,7 +268,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"contentType\": \"CommentCreateActionRequest\",\r\n    \"comment\": {\r\n        \"contentType\": \"Comment\",\r\n        \"content\": \"<p>Отчет выполнен в срок</p>\",\r\n        \"attaches\": [],\r\n        \"workTime\": null,\r\n        \"workDate\": {\r\n            \"contentType\": \"DateTime\",\r\n            \"value\": \"2025-11-24T11:03:52.767Z\"\r\n        },\r\n        \"completed\": 0,\r\n        \"owner\": {\r\n            \"id\": \"1000005\",\r\n            \"contentType\": \"Employee\"\r\n        },\r\n        \"subject\": {\r\n            \"id\": \"1000023\",\r\n            \"contentType\": \"Task\"\r\n        },\r\n        \"timeCreated\": {\r\n            \"contentType\": \"DateTime\",\r\n            \"value\": \"2025-11-24T11:08:09.394Z\"\r\n        }\r\n    },\r\n    \"transports\": [\r\n        {}\r\n    ]\r\n}",
+					"raw": "{\r\n    \"contentType\": \"CommentCreateActionRequest\",\r\n    \"comment\": {\r\n        \"contentType\": \"Comment\",\r\n        \"content\": \"<p>купил самые дорогие</p>\",\r\n        \"attaches\": [],\r\n        \"workTime\": null,\r\n        \"workDate\": {\r\n            \"contentType\": \"DateTime\",\r\n            \"value\": \"2025-11-25T17:16:06.217Z\"\r\n        },\r\n        \"completed\": 0,\r\n        \"owner\": {\r\n            \"id\": \"1000005\",\r\n            \"contentType\": \"Employee\"\r\n        },\r\n        \"subject\": {\r\n            \"id\": \"1000051\",\r\n            \"contentType\": \"Task\"\r\n        },\r\n        \"timeCreated\": {\r\n            \"contentType\": \"DateTime\",\r\n            \"value\": \"2025-11-25T17:19:15.154Z\"\r\n        }\r\n    },\r\n    \"transports\": [\r\n        {}\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -279,7 +276,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000023/comments",
+					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000051/comments",
 					"protocol": "https",
 					"host": [
 						"m74965812",
@@ -290,7 +287,7 @@
 						"api",
 						"v3",
 						"task",
-						"1000023",
+						"1000051",
 						"comments"
 					]
 				}
@@ -317,7 +314,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000023/doAction",
+					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000051/doAction",
 					"protocol": "https",
 					"host": [
 						"m74965812",
@@ -328,7 +325,7 @@
 						"api",
 						"v3",
 						"task",
-						"1000023",
+						"1000051",
 						"doAction"
 					]
 				}
@@ -355,7 +352,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000023",
+					"raw": "https://m74965812.megaplan.ru/api/v3/task/1000051",
 					"protocol": "https",
 					"host": [
 						"m74965812",
@@ -366,7 +363,7 @@
 						"api",
 						"v3",
 						"task",
-						"1000023"
+						"1000051"
 					]
 				}
 			},
